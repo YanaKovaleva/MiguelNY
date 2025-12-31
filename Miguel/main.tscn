@@ -1,13 +1,12 @@
-[gd_scene load_steps=26 format=3 uid="uid://dnwrkjj31sxiq"]
+[gd_scene load_steps=25 format=3 uid="uid://dnwrkjj31sxiq"]
 
 [ext_resource type="Texture2D" uid="uid://buiwko4sg3nyf" path="res://images/NY_bg.jpeg" id="1_ig7tw"]
-[ext_resource type="Texture2D" uid="uid://b7prbhrdw3nv0" path="res://images/Isa_b.png" id="2_5vw27"]
 [ext_resource type="Script" uid="uid://43lm43o1hxwb" path="res://isabel.gd" id="2_kek77"]
-[ext_resource type="Texture2D" uid="uid://du0lervk8pryr" path="res://images/Isa_f.png" id="3_kek77"]
 [ext_resource type="Texture2D" uid="uid://b0cun0xhrue7x" path="res://images/music.png" id="4_4c57u"]
 [ext_resource type="Texture2D" uid="uid://n1n58prlanid" path="res://images/tree.png" id="5_efxa6"]
 [ext_resource type="Texture2D" uid="uid://cddrjgnqq1pdn" path="res://images/quiz.png" id="6_dg77c"]
 [ext_resource type="Script" uid="uid://bgei1wth2bv3m" path="res://speaker.gd" id="6_w48qg"]
+[ext_resource type="Texture2D" uid="uid://dff5ufbr8c4wy" path="res://images/Miguel_f.png" id="7_w48qg"]
 [ext_resource type="Texture2D" uid="uid://ckw6n3evo67yu" path="res://images/game.png" id="7_ycdy4"]
 [ext_resource type="Script" uid="uid://bp5fb8twdlgw7" path="res://tree.gd" id="8_vivmo"]
 [ext_resource type="Texture2D" uid="uid://ccrfj6j0821r2" path="res://images/photos.png" id="8_w48qg"]
@@ -28,15 +27,7 @@ size = Vector2(44, 102)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_5vw27")
-}],
-"loop": true,
-"name": &"back",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_kek77")
+"texture": ExtResource("7_w48qg")
 }],
 "loop": true,
 "name": &"front",
@@ -98,16 +89,16 @@ position = Vector2(-12.4998, 43.7501)
 scale = Vector2(0.999999, 0.999999)
 shape = SubResource("RectangleShape2D_getpj")
 
-[node name="Isabel" type="CharacterBody2D" parent="."]
+[node name="Miguel" type="CharacterBody2D" parent="."]
 script = ExtResource("2_kek77")
 
-[node name="Isa_collision" type="CollisionShape2D" parent="Isabel"]
+[node name="Miguel_collision" type="CollisionShape2D" parent="Miguel"]
 position = Vector2(112, 494)
 shape = SubResource("RectangleShape2D_vivmo")
 
-[node name="Isa_animation" type="AnimatedSprite2D" parent="Isabel"]
-position = Vector2(112, 482)
-scale = Vector2(0.5, 0.5)
+[node name="Miguel_animation" type="AnimatedSprite2D" parent="Miguel"]
+position = Vector2(112, 489)
+scale = Vector2(0.276549, 0.262228)
 sprite_frames = SubResource("SpriteFrames_2cqfq")
 animation = &"front"
 
@@ -148,7 +139,6 @@ script = ExtResource("10_2cqfq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="quiz/Area2D"]
 position = Vector2(38.75, 27.5)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_cegan")
 
 [node name="leftBoundary" type="Area2D" parent="."]
@@ -195,7 +185,7 @@ shape = SubResource("RectangleShape2D_dg77c")
 [connection signal="body_exited" from="tree/Area2D" to="tree" method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="quiz/Area2D" to="quiz" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="quiz/Area2D" to="quiz" method="_on_area_2d_body_exited"]
-[connection signal="body_entered" from="leftBoundary" to="Isabel" method="_on_left_boundary_body_entered"]
-[connection signal="body_entered" from="rightBoundary" to="Isabel" method="_on_right_boundary_body_entered"]
-[connection signal="body_entered" from="topBoundary" to="Isabel" method="_on_top_boundary_body_entered"]
-[connection signal="body_entered" from="bottomBoundary" to="Isabel" method="_on_bottom_boundary_body_entered"]
+[connection signal="body_entered" from="leftBoundary" to="Miguel" method="_on_left_boundary_body_entered"]
+[connection signal="body_entered" from="rightBoundary" to="Miguel" method="_on_right_boundary_body_entered"]
+[connection signal="body_entered" from="topBoundary" to="Miguel" method="_on_top_boundary_body_entered"]
+[connection signal="body_entered" from="bottomBoundary" to="Miguel" method="_on_bottom_boundary_body_entered"]

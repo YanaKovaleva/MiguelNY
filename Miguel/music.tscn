@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dqaexabvbgwhq"]
 
-[ext_resource type="Texture2D" uid="uid://fd45yt8ly43e" path="res://images/isabelSongs.png" id="1_5vxup"]
+[ext_resource type="Texture2D" uid="uid://8wacravln6em" path="res://images/miguelSongs.png" id="1_5vxup"]
 [ext_resource type="Script" uid="uid://dbwldyurfjtr4" path="res://songs_scene.gd" id="2_w5q55"]
 
 [node name="Node2D" type="Node2D"]

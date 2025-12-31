@@ -8,8 +8,8 @@
 [ext_resource type="Script" uid="uid://u8tvpulbjg84" path="res://game_isabel.gd" id="5_hve3p"]
 [ext_resource type="Script" uid="uid://bwxl1l4kou4fj" path="res://coin_2.gd" id="5_iotsf"]
 [ext_resource type="Script" uid="uid://dkg5kbp2susjf" path="res://coin_3.gd" id="6_lc2xo"]
-[ext_resource type="Texture2D" uid="uid://du0lervk8pryr" path="res://images/Isa_f.png" id="6_mfdv2"]
 [ext_resource type="Script" uid="uid://dq0ujgqafu5w5" path="res://flag.gd" id="8_215e1"]
+[ext_resource type="Texture2D" uid="uid://dff5ufbr8c4wy" path="res://images/Miguel_f.png" id="10_215e1"]
 [ext_resource type="Texture2D" uid="uid://7oxnb58yxjv2" path="res://images/gameEnd.jpg" id="11_7sc4i"]
 [ext_resource type="Script" uid="uid://csebd80xi4j1l" path="res://good_job.gd" id="12_80cx4"]
 [ext_resource type="Texture2D" uid="uid://da51jbyeb01pc" path="res://images/confetti.png" id="13_215e1"]
@@ -128,17 +128,17 @@ position = Vector2(26.6667, 33.3333)
 scale = Vector2(11.8112, 11.8376)
 shape = SubResource("RectangleShape2D_rvswv")
 
-[node name="gameIsabel" type="CharacterBody2D" parent="."]
+[node name="gameMiguel" type="CharacterBody2D" parent="."]
 script = ExtResource("5_hve3p")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="gameIsabel"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gameMiguel"]
 position = Vector2(166.5, 641)
 shape = SubResource("RectangleShape2D_boyg6")
 
-[node name="Sprite2D" type="Sprite2D" parent="gameIsabel"]
-position = Vector2(167, 630)
-scale = Vector2(0.45, 0.45)
-texture = ExtResource("6_mfdv2")
+[node name="Sprite2D" type="Sprite2D" parent="gameMiguel"]
+position = Vector2(166, 632)
+scale = Vector2(0.266, 0.241)
+texture = ExtResource("10_215e1")
 
 [node name="goodJob" type="Sprite2D" parent="."]
 position = Vector2(220, 150)
